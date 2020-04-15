@@ -54,6 +54,8 @@ https://localhost:[port]/api/listOps
     "operation": "OVERLAP"
 }
 
+https://web3.codeproject.com/KB/datetime/TimePeriod/PeriodRelations.png - types of intervals that were covered with unit tests
+
 ### Things could be improved/finished:
 * Adequate exception handling
 * Integration tests
