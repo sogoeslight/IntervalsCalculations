@@ -2,17 +2,18 @@
 
 ## ASP.NET Core library with REST-based webservice, which provides some basic datetime interval calculations.
 
-## Provides next operations: (in code)
-* Intersection (INTERSECTION)
-* Containment (CONTAINMENT)
-* Overlap (OVERLAP)
-* Subsctraction (SUBSTRACTION)
+## Provides next operations:
+* Intersection `INTERSECTION`
+* Containment `CONTAINMENT`
+* Overlap `OVERLAP`
+* Subsctraction `SUBSTRACTION`
 .. of 2 intervals or 2 lists of intervals, pair-by-pair.
 
 ### This web service can be tested by existing unit tests or manually, for example with Postman
 ### Examples of requests:
 POST request to the
 https://localhost:[port]/api/ops
+
 {
     "first": {
         "Start": "2015-02-25T15:30:30",
@@ -27,6 +28,7 @@ https://localhost:[port]/api/ops
 
 POST request to the
 https://localhost:[port]/api/listOps
+
 {
     "first": [
         {
