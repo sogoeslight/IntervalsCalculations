@@ -3,10 +3,10 @@
 ## ASP.NET Core library with REST-based webservice, which provides some basic datetime interval calculations.
 
 ## Provides next operations: (in code)
-..* Intersection (INTERSECTION)
-..* Containment (CONTAINMENT)
-..* Overlap (OVERLAP)
-..* Subsctraction (SUBSTRACTION)
+* Intersection (INTERSECTION)
+* Containment (CONTAINMENT)
+* Overlap (OVERLAP)
+* Subsctraction (SUBSTRACTION)
 .. of 2 intervals or 2 lists of intervals, pair-by-pair.
 
 ### This web service can be tested by existing unit tests or manually, for example with Postman
@@ -52,8 +52,8 @@ https://localhost:[port]/api/listOps
 }
 
 ### Things could be improved/finished:
-..* Adequate exception handling
-..* Integration tests
-..* Logging
-..* Security
-..* ...
+* Adequate exception handling
+* Integration tests
+* Logging
+* Security
+* ...
