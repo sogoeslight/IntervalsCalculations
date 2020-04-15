@@ -7,6 +7,7 @@
 * Containment `CONTAINMENT`
 * Overlap `OVERLAP`
 * Subsctraction `SUBSTRACTION`
+
 .. of 2 intervals or 2 lists of intervals, pair-by-pair.
 
 ### This web service can be tested by existing unit tests or manually, for example with Postman
