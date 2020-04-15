@@ -3,10 +3,10 @@
 ## ASP.NET Core library with REST-based webservice, which provides some basic datetime interval calculations.
 
 ## Provides next operations:
-* Intersection `INTERSECTION`
-* Containment `CONTAINMENT`
-* Overlap `OVERLAP`
-* Subsctraction `SUBSTRACTION`
+* `INTERSECTION`
+* `CONTAINMENT`
+* `OVERLAP`
+* `SUBSTRACTION`
 
 .. of 2 intervals or 2 lists of intervals, pair-by-pair.
 
