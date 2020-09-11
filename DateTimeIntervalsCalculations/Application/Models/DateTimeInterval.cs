@@ -14,7 +14,7 @@ namespace DateTimeIntervalsCalculations.Application
             return new DateTimeInterval(start, end);
         }
 
-        public override bool Equals(Object obj) // no need in overriding Object.GetHashCode()
+        public override bool Equals(Object obj) // No need in overriding Object.GetHashCode()
         {
             if ((obj == null) || !this.GetType().Equals(obj.GetType())) // Check for null and compare run-time types.
             {

@@ -7,10 +7,10 @@ namespace DateTimeIntervalsCalculations.Application
     /// </summary>
     public class OperationResponse
     {
-        public object result;
+        public object Result { get; set; }
         public OperationResponse(object result)
         {
-            this.result = result;
+            this.Result = result;
         }
     }
 
@@ -19,10 +19,10 @@ namespace DateTimeIntervalsCalculations.Application
     /// </summary>
     public class ListOperationResponse
     {
-        public List<object> result { get; set; }
+        public List<object> Result { get; set; }
         public ListOperationResponse(List<object> result)
         {
-            this.result = result;
+            this.Result = result;
         }
     }
 }

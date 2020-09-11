@@ -6,8 +6,8 @@ namespace DateTimeIntervalsCalculations.Application
     {
         public bool ValidateDateTimeIntervals(OperationRequest request)
         {
-            if (request.first.Start.CompareTo(request.first.End) > 0 
-                || request.second.Start.CompareTo(request.second.End) > 0)
+            if (request.First.Start.CompareTo(request.First.End) > 0 
+                || request.Second.Start.CompareTo(request.Second.End) > 0)
             {
                 throw new Exception("First number should not be greater than second");
             }
@@ -17,12 +17,12 @@ namespace DateTimeIntervalsCalculations.Application
 
         public bool ValidateListLengths(ListOperationRequest request)
         {
-            for (int i = 0; i < request.first.Count; i++)
+            for (int i = 0; i < request.First.Count; i++)
             {
-                if (request.first[i].Start.CompareTo(request.first[i].End) > 0
-                    || request.first[i].Start.CompareTo(request.first[i].End) > 0
-                    || request.second[i].Start.CompareTo(request.second[i].End) > 0
-                    || request.second[i].Start.CompareTo(request.second[i].End) > 0)
+                if (request.First[i].Start.CompareTo(request.First[i].End) > 0
+                    || request.First[i].Start.CompareTo(request.First[i].End) > 0
+                    || request.Second[i].Start.CompareTo(request.Second[i].End) > 0
+                    || request.Second[i].Start.CompareTo(request.Second[i].End) > 0)
                 {
                     return false;
                 }

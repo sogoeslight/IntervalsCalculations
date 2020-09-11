@@ -21,9 +21,9 @@ namespace DateTimeIntervalsCalculations.Application
         [Route("ops")]
         public ActionResult PerformOperation([FromBody] OperationRequest request)
         {
-            if (_validationService.ValidateDateTimeIntervals(request)) // TO DO: normal exception handling
+            if (_validationService.ValidateDateTimeIntervals(request)) // TODO: exception handling
             {
-                var result = _dtiService.PerformOperation(request.first, request.second, request.operation);
+                var result = _dtiService.PerformOperation(request.First, request.Second, request.Operation);
                 return Ok(new OperationResponse(result));
             }
             else
@@ -40,7 +40,7 @@ namespace DateTimeIntervalsCalculations.Application
             {
                 if (_validationService.ValidateListLengths(request))
                 {
-                    var result = _dtiService.PerformListOperation(request.first, request.second, request.operation);
+                    var result = _dtiService.PerformListOperation(request.First, request.Second, request.Operation);
                     return Ok(new ListOperationResponse(result));
                 }
                 else
@@ -50,7 +50,7 @@ namespace DateTimeIntervalsCalculations.Application
             }
             catch(Exception ex)
             {
-                if (request.first.Count != request.second.Count)
+                if (request.First.Count != request.Second.Count)
                 {
                     return StatusCode(400, "Interval lists must have same length");
                 }
